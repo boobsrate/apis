@@ -1,0 +1,29 @@
+# Configuration file for prototool.
+# See: https://github.com/uber/prototool
+
+excludes:
+  - third_party
+  - vendor
+
+protoc:
+  version: 3.11.2
+  includes:
+    - ./proto_deps
+    - ./vendor/github.com/grpc-ecosystem/grpc-gateway
+
+lint:
+  group: google
+
+  rules:
+    add:
+      - SYNTAX_PROTO3
+      - FILE_OPTIONS_REQUIRE_GO_PACKAGE
+      - FILE_OPTIONS_GO_PACKAGE_SAME_IN_DIR
+      - IMPORTS_NOT_PUBLIC
+      - IMPORTS_NOT_WEAK
+      - PACKAGES_SAME_IN_DIR
+      - PACKAGE_IS_DECLARED
+      - PACKAGE_LOWER_CASE
+      - REQUEST_RESPONSE_NAMES_MATCH_RPC
+      - REQUEST_RESPONSE_TYPES_AFTER_SERVICE
+      - REQUEST_RESPONSE_TYPES_IN_SAME_FILE
