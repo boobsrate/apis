@@ -64,4 +64,4 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> TitsServic
 };
 
 /// Descriptor for `TitsService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
-final $typed_data.Uint8List titsServiceDescriptor = $convert.base64Decode('CgtUaXRzU2VydmljZRJPCgdHZXRUaXRzEhkuYXBpcy50aXRzLnYxLlRpdHNSZXF1ZXN0GhouYXBpcy50aXRzLnYxLlRpdHNSZXNwb25zZSINgtPkkwIHEgUvdGl0cxJUCgRWb3RlEhkuYXBpcy50aXRzLnYxLlZvdGVSZXF1ZXN0GhouYXBpcy50aXRzLnYxLlRpdHNSZXNwb25zZSIVgtPkkwIPIgovdGl0cy92b3RlOgEq');
+final $typed_data.Uint8List titsServiceDescriptor = $convert.base64Decode('CgtUaXRzU2VydmljZRJCCgdHZXRUaXRzEhkuYXBpcy50aXRzLnYxLlRpdHNSZXF1ZXN0GhouYXBpcy50aXRzLnYxLlRpdHNSZXNwb25zZSIAEj8KBFZvdGUSGS5hcGlzLnRpdHMudjEuVm90ZVJlcXVlc3QaGi5hcGlzLnRpdHMudjEuVGl0c1Jlc3BvbnNlIgA=');

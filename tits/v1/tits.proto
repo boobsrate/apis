@@ -1,35 +1,15 @@
 syntax = "proto3";
 package apis.tits.v1;
 
-import "google/api/annotations.proto";
-import "protoc-gen-swagger/options/annotations.proto";
-
 
 option go_package = "apis/tits/v1;titspb";
 
-option (grpc.gateway.protoc_gen_swagger.options.openapiv2_swagger) = {
-  info: {
-    title: "BoobsRate API"
-    version: "v1"
-  };
-  base_path:"/api/v1"
-};
-
 service TitsService {
   // Get pair tits to compare.
-  rpc GetTits(TitsRequest) returns (TitsResponse) {
-    option (google.api.http) = {
-      get: "/tits"
-    };
-  }
+  rpc GetTits(TitsRequest) returns (TitsResponse) {}
 
   // Vote for one of two tits.
-  rpc Vote(VoteRequest) returns (TitsResponse) {
-    option (google.api.http) = {
-      post: "/tits/vote"
-      body: "*"
-    };
-  }
+  rpc Vote(VoteRequest) returns (TitsResponse) {}
 }
 
 message Tits{
